@@ -1,0 +1,1349 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:53:33] filterscripts = ""  (string)
+[04:53:33] 
+[04:53:33] Server Plugins
+[04:53:33] --------------
+[04:53:33]  Loading plugin: mysql
+[04:53:33]   Failed.
+[04:53:33]  Loading plugin: streamer
+[04:53:33]   Failed.
+[04:53:33]  Loading plugin: sscanf
+[04:53:33]   Failed.
+[04:53:33]  Loaded 0 plugins.
+
+[04:53:33] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:53:33] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:54:05] filterscripts = ""  (string)
+[04:54:05] 
+[04:54:05] Server Plugins
+[04:54:05] --------------
+[04:54:05]  Loading plugin: mysql
+[04:54:05]   Failed.
+[04:54:05]  Loading plugin: streamer
+[04:54:05]   Failed.
+[04:54:05]  Loading plugin: sscanf
+[04:54:05]   Failed.
+[04:54:05]  Loaded 0 plugins.
+
+[04:54:05] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:54:05] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:54:07] filterscripts = ""  (string)
+[04:54:07] 
+[04:54:07] Server Plugins
+[04:54:07] --------------
+[04:54:07]  Loading plugin: mysql
+[04:54:07]   Failed.
+[04:54:07]  Loading plugin: streamer
+[04:54:07]   Failed.
+[04:54:07]  Loading plugin: sscanf
+[04:54:07]   Failed.
+[04:54:07]  Loaded 0 plugins.
+
+[04:54:07] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:54:07] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:54:08] filterscripts = ""  (string)
+[04:54:08] 
+[04:54:08] Server Plugins
+[04:54:08] --------------
+[04:54:08]  Loading plugin: mysql
+[04:54:08]   Failed.
+[04:54:08]  Loading plugin: streamer
+[04:54:08]   Failed.
+[04:54:08]  Loading plugin: sscanf
+[04:54:08]   Failed.
+[04:54:08]  Loaded 0 plugins.
+
+[04:54:08] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:54:08] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:54:14] filterscripts = ""  (string)
+[04:54:14] 
+[04:54:14] Server Plugins
+[04:54:14] --------------
+[04:54:14]  Loading plugin: mysql
+[04:54:14]   Failed.
+[04:54:14]  Loading plugin: streamer
+[04:54:14]   Failed.
+[04:54:14]  Loading plugin: sscanf
+[04:54:14]   Failed.
+[04:54:14]  Loaded 0 plugins.
+
+[04:54:14] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:54:14] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:54:16] filterscripts = ""  (string)
+[04:54:16] 
+[04:54:16] Server Plugins
+[04:54:16] --------------
+[04:54:16]  Loading plugin: mysql
+[04:54:16]   Failed.
+[04:54:16]  Loading plugin: streamer
+[04:54:16]   Failed.
+[04:54:16]  Loading plugin: sscanf
+[04:54:16]   Failed.
+[04:54:16]  Loaded 0 plugins.
+
+[04:54:16] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:54:16] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:54:16] filterscripts = ""  (string)
+[04:54:16] 
+[04:54:16] Server Plugins
+[04:54:16] --------------
+[04:54:16]  Loading plugin: mysql
+[04:54:16]   Failed.
+[04:54:16]  Loading plugin: streamer
+[04:54:16]   Failed.
+[04:54:16]  Loading plugin: sscanf
+[04:54:16]   Failed.
+[04:54:16]  Loaded 0 plugins.
+
+[04:54:16] I couldn't load any gamemode scripts. Please verify your server.cfg
+[04:54:16] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:05:26] filterscripts = ""  (string)
+[05:05:26] 
+[05:05:26] Server Plugins
+[05:05:26] --------------
+[05:05:26]  Loading plugin: mysql
+[05:05:26]  >> plugin.mysql: R41-4 successfully loaded.
+[05:05:26]   Loaded.
+[05:05:26]  Loading plugin: streamer
+[05:05:26] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:05:26]   Loaded.
+[05:05:26]  Loading plugin: sscanf
+[05:05:26] 
+[05:05:26]  ===============================
+[05:05:26] 
+[05:05:26]       sscanf plugin loaded.     
+[05:05:26] 
+[05:05:26]          Version: 2.13.8
+[05:05:26] 
+[05:05:26]    (c) 2022 Alex "Y_Less" Cole  
+[05:05:26] 
+[05:05:26]  ===============================
+[05:05:26] 
+[05:05:26]   Loaded.
+[05:05:26]  Loaded 3 plugins.
+
+[05:05:26] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:05:26] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:06:27] filterscripts = ""  (string)
+[05:06:27] 
+[05:06:27] Server Plugins
+[05:06:27] --------------
+[05:06:27]  Loading plugin: mysql
+[05:06:27]  >> plugin.mysql: R41-4 successfully loaded.
+[05:06:27]   Loaded.
+[05:06:27]  Loading plugin: streamer
+[05:06:27] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:06:27]   Loaded.
+[05:06:27]  Loading plugin: sscanf
+[05:06:27] 
+[05:06:27]  ===============================
+[05:06:27] 
+[05:06:27]       sscanf plugin loaded.     
+[05:06:27] 
+[05:06:27]          Version: 2.13.8
+[05:06:27] 
+[05:06:27]    (c) 2022 Alex "Y_Less" Cole  
+[05:06:27] 
+[05:06:27]  ===============================
+[05:06:27] 
+[05:06:27]   Loaded.
+[05:06:27]  Loaded 3 plugins.
+
+[05:06:27] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:06:27] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:18:51] filterscripts = ""  (string)
+[05:18:51] 
+[05:18:51] Server Plugins
+[05:18:51] --------------
+[05:18:51]  Loading plugin: mysql
+[05:18:51]  >> plugin.mysql: R41-4 successfully loaded.
+[05:18:51]   Loaded.
+[05:18:51]  Loading plugin: streamer
+[05:18:51] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:18:51]   Loaded.
+[05:18:51]  Loading plugin: sscanf
+[05:18:51] 
+[05:18:51]  ===============================
+[05:18:51] 
+[05:18:51]       sscanf plugin loaded.     
+[05:18:51] 
+[05:18:51]          Version: 2.13.8
+[05:18:51] 
+[05:18:51]    (c) 2022 Alex "Y_Less" Cole  
+[05:18:51] 
+[05:18:51]  ===============================
+[05:18:51] 
+[05:18:51]   Loaded.
+[05:18:51]  Loaded 3 plugins.
+
+[05:18:51] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:18:51] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:18:52] filterscripts = ""  (string)
+[05:18:52] 
+[05:18:52] Server Plugins
+[05:18:52] --------------
+[05:18:52]  Loading plugin: mysql
+[05:18:52]  >> plugin.mysql: R41-4 successfully loaded.
+[05:18:52]   Loaded.
+[05:18:52]  Loading plugin: streamer
+[05:18:52] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:18:52]   Loaded.
+[05:18:52]  Loading plugin: sscanf
+[05:18:52] 
+[05:18:52]  ===============================
+[05:18:52] 
+[05:18:52]       sscanf plugin loaded.     
+[05:18:52] 
+[05:18:52]          Version: 2.13.8
+[05:18:52] 
+[05:18:52]    (c) 2022 Alex "Y_Less" Cole  
+[05:18:52] 
+[05:18:52]  ===============================
+[05:18:52] 
+[05:18:52]   Loaded.
+[05:18:52]  Loaded 3 plugins.
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:21:48] filterscripts = ""  (string)
+[05:21:48] 
+[05:21:48] Server Plugins
+[05:21:48] --------------
+[05:21:48]  Loading plugin: mysql
+[05:21:48]  >> plugin.mysql: R41-4 successfully loaded.
+[05:21:48]   Loaded.
+[05:21:48]  Loading plugin: streamer
+[05:21:48] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:21:48]   Loaded.
+[05:21:48]  Loading plugin: sscanf
+[05:21:48] 
+[05:21:48]  ===============================
+[05:21:48] 
+[05:21:48]       sscanf plugin loaded.     
+[05:21:48] 
+[05:21:48]          Version: 2.13.8
+[05:21:48] 
+[05:21:48]    (c) 2022 Alex "Y_Less" Cole  
+[05:21:48] 
+[05:21:48]  ===============================
+[05:21:48] 
+[05:21:48]   Loaded.
+[05:21:48]  Loaded 3 plugins.
+
+[05:21:48] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:21:48] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:21:56] filterscripts = ""  (string)
+[05:21:56] 
+[05:21:56] Server Plugins
+[05:21:56] --------------
+[05:21:56]  Loading plugin: mysql
+[05:21:56]  >> plugin.mysql: R41-4 successfully loaded.
+[05:21:56]   Loaded.
+[05:21:56]  Loading plugin: streamer
+[05:21:56] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:21:56]   Loaded.
+[05:21:56]  Loading plugin: sscanf
+[05:21:56] 
+[05:21:56]  ===============================
+[05:21:56] 
+[05:21:56]       sscanf plugin loaded.     
+[05:21:56] 
+[05:21:56]          Version: 2.13.8
+[05:21:56] 
+[05:21:56]    (c) 2022 Alex "Y_Less" Cole  
+[05:21:56] 
+[05:21:56]  ===============================
+[05:21:56] 
+[05:21:56]   Loaded.
+[05:21:56]  Loaded 3 plugins.
+
+[05:21:56] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:21:56] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:21:57] filterscripts = ""  (string)
+[05:21:57] 
+[05:21:57] Server Plugins
+[05:21:57] --------------
+[05:21:57]  Loading plugin: mysql
+[05:21:57]  >> plugin.mysql: R41-4 successfully loaded.
+[05:21:57]   Loaded.
+[05:21:57]  Loading plugin: streamer
+[05:21:57] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:21:57]   Loaded.
+[05:21:57]  Loading plugin: sscanf
+[05:21:57] 
+[05:21:57]  ===============================
+[05:21:57] 
+[05:21:57]       sscanf plugin loaded.     
+[05:21:57] 
+[05:21:57]          Version: 2.13.8
+[05:21:57] 
+[05:21:57]    (c) 2022 Alex "Y_Less" Cole  
+[05:21:57] 
+[05:21:57]  ===============================
+[05:21:57] 
+[05:21:57]   Loaded.
+[05:21:57]  Loaded 3 plugins.
+
+[05:21:57] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:21:57] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:22:43] filterscripts = ""  (string)
+[05:22:43] 
+[05:22:43] Server Plugins
+[05:22:43] --------------
+[05:22:43]  Loading plugin: mysql
+[05:22:43]  >> plugin.mysql: R41-4 successfully loaded.
+[05:22:43]   Loaded.
+[05:22:43]  Loading plugin: streamer
+[05:22:43] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:22:43]   Loaded.
+[05:22:43]  Loading plugin: sscanf
+[05:22:43] 
+[05:22:43]  ===============================
+[05:22:43] 
+[05:22:43]       sscanf plugin loaded.     
+[05:22:43] 
+[05:22:43]          Version: 2.13.8
+[05:22:43] 
+[05:22:43]    (c) 2022 Alex "Y_Less" Cole  
+[05:22:43] 
+[05:22:43]  ===============================
+[05:22:43] 
+[05:22:43]   Loaded.
+[05:22:43]  Loaded 3 plugins.
+
+[05:22:44] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:22:44] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:22:46] filterscripts = ""  (string)
+[05:22:46] 
+[05:22:46] Server Plugins
+[05:22:46] --------------
+[05:22:46]  Loading plugin: mysql
+[05:22:46]  >> plugin.mysql: R41-4 successfully loaded.
+[05:22:46]   Loaded.
+[05:22:46]  Loading plugin: streamer
+[05:22:46] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:22:46]   Loaded.
+[05:22:46]  Loading plugin: sscanf
+[05:22:46] 
+[05:22:46]  ===============================
+[05:22:46] 
+[05:22:46]       sscanf plugin loaded.     
+[05:22:46] 
+[05:22:46]          Version: 2.13.8
+[05:22:46] 
+[05:22:46]    (c) 2022 Alex "Y_Less" Cole  
+[05:22:46] 
+[05:22:46]  ===============================
+[05:22:46] 
+[05:22:46]   Loaded.
+[05:22:46]  Loaded 3 plugins.
+
+[05:22:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:22:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[05:52:32] filterscripts = ""  (string)
+[05:52:32] 
+[05:52:32] Server Plugins
+[05:52:32] --------------
+[05:52:32]  Loading plugin: mysql
+[05:52:32]  >> plugin.mysql: R41-4 successfully loaded.
+[05:52:32]   Loaded.
+[05:52:32]  Loading plugin: streamer
+[05:52:32] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[05:52:32]   Loaded.
+[05:52:32]  Loading plugin: sscanf
+[05:52:32] 
+[05:52:32]  ===============================
+[05:52:32] 
+[05:52:32]       sscanf plugin loaded.     
+[05:52:32] 
+[05:52:32]          Version: 2.13.8
+[05:52:32] 
+[05:52:32]    (c) 2022 Alex "Y_Less" Cole  
+[05:52:32] 
+[05:52:32]  ===============================
+[05:52:32] 
+[05:52:32]   Loaded.
+[05:52:32]  Loaded 3 plugins.
+
+[05:52:32] I couldn't load any gamemode scripts. Please verify your server.cfg
+[05:52:32] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[06:59:18] filterscripts = ""  (string)
+[06:59:18] 
+[06:59:18] Server Plugins
+[06:59:18] --------------
+[06:59:18]  Loading plugin: mysql
+[06:59:18]  >> plugin.mysql: R41-4 successfully loaded.
+[06:59:18]   Loaded.
+[06:59:18]  Loading plugin: streamer
+[06:59:18] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[06:59:18]   Loaded.
+[06:59:18]  Loading plugin: sscanf
+[06:59:18] 
+[06:59:18]  ===============================
+[06:59:18] 
+[06:59:18]       sscanf plugin loaded.     
+[06:59:18] 
+[06:59:18]          Version: 2.13.8
+[06:59:18] 
+[06:59:18]    (c) 2022 Alex "Y_Less" Cole  
+[06:59:18] 
+[06:59:18]  ===============================
+[06:59:18] 
+[06:59:18]   Loaded.
+[06:59:18]  Loaded 3 plugins.
+
+[06:59:18] 
+[06:59:18] Filterscripts
+[06:59:18] ---------------
+[06:59:18]   Loaded 0 filterscripts.
+
+[06:59:18] Script[gamemodes/rpgm.amx]: Run time error 19: "File or function is not found"
+[06:59:18] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:04:00] filterscripts = ""  (string)
+[07:04:00] 
+[07:04:00] Server Plugins
+[07:04:00] --------------
+[07:04:00]  Loading plugin: mysql
+[07:04:00]  >> plugin.mysql: R41-4 successfully loaded.
+[07:04:00]   Loaded.
+[07:04:00]  Loading plugin: streamer
+[07:04:00] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:04:00]   Loaded.
+[07:04:00]  Loading plugin: sscanf
+[07:04:00] 
+[07:04:00]  ===============================
+[07:04:00] 
+[07:04:00]       sscanf plugin loaded.     
+[07:04:00] 
+[07:04:00]          Version: 2.13.8
+[07:04:00] 
+[07:04:00]    (c) 2022 Alex "Y_Less" Cole  
+[07:04:00] 
+[07:04:00]  ===============================
+[07:04:00] 
+[07:04:00]   Loaded.
+[07:04:00]  Loaded 3 plugins.
+
+[07:04:00] 
+[07:04:00] Filterscripts
+[07:04:00] ---------------
+[07:04:00]   Loaded 0 filterscripts.
+
+[07:04:00] Script[gamemodes/rpgm.amx]: Run time error 19: "File or function is not found"
+[07:04:00] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:07:07] filterscripts = ""  (string)
+[07:07:07] 
+[07:07:07] Server Plugins
+[07:07:07] --------------
+[07:07:07]  Loading plugin: mysql
+[07:07:07]  >> plugin.mysql: R41-4 successfully loaded.
+[07:07:07]   Loaded.
+[07:07:07]  Loading plugin: streamer
+[07:07:07] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:07:07]   Loaded.
+[07:07:07]  Loading plugin: sscanf
+[07:07:07] 
+[07:07:07]  ===============================
+[07:07:07] 
+[07:07:07]       sscanf plugin loaded.     
+[07:07:07] 
+[07:07:07]          Version: 2.13.8
+[07:07:07] 
+[07:07:07]    (c) 2022 Alex "Y_Less" Cole  
+[07:07:07] 
+[07:07:07]  ===============================
+[07:07:07] 
+[07:07:07]   Loaded.
+[07:07:07]  Loaded 3 plugins.
+
+[07:07:07] 
+[07:07:07] Filterscripts
+[07:07:07] ---------------
+[07:07:07]   Loaded 0 filterscripts.
+
+[07:07:07] Script[gamemodes/rpgm.amx]: Run time error 19: "File or function is not found"
+[07:07:07] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:09:30] filterscripts = ""  (string)
+[07:09:30] 
+[07:09:30] Server Plugins
+[07:09:30] --------------
+[07:09:30]  Loading plugin: mysql
+[07:09:30]  >> plugin.mysql: R41-4 successfully loaded.
+[07:09:30]   Loaded.
+[07:09:30]  Loading plugin: streamer
+[07:09:30] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:09:30]   Loaded.
+[07:09:30]  Loading plugin: sscanf
+[07:09:30] 
+[07:09:30]  ===============================
+[07:09:30] 
+[07:09:30]       sscanf plugin loaded.     
+[07:09:30] 
+[07:09:30]          Version: 2.13.8
+[07:09:30] 
+[07:09:30]    (c) 2022 Alex "Y_Less" Cole  
+[07:09:30] 
+[07:09:30]  ===============================
+[07:09:30] 
+[07:09:30]   Loaded.
+[07:09:30]  Loading plugin: crashdetect
+[07:09:30]   Failed.
+[07:09:30]  Loaded 3 plugins.
+
+[07:09:30] 
+[07:09:30] Filterscripts
+[07:09:30] ---------------
+[07:09:30]   Loaded 0 filterscripts.
+
+[07:09:30] Script[gamemodes/rpgm.amx]: Run time error 19: "File or function is not found"
+[07:09:30] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:10:27] filterscripts = ""  (string)
+[07:10:27] 
+[07:10:27] Server Plugins
+[07:10:27] --------------
+[07:10:27]  Loading plugin: mysql
+[07:10:27]  >> plugin.mysql: R41-4 successfully loaded.
+[07:10:27]   Loaded.
+[07:10:27]  Loading plugin: streamer
+[07:10:27] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:10:27]   Loaded.
+[07:10:27]  Loading plugin: sscanf
+[07:10:27] 
+[07:10:27]  ===============================
+[07:10:27] 
+[07:10:27]       sscanf plugin loaded.     
+[07:10:27] 
+[07:10:27]          Version: 2.13.8
+[07:10:27] 
+[07:10:27]    (c) 2022 Alex "Y_Less" Cole  
+[07:10:27] 
+[07:10:27]  ===============================
+[07:10:27] 
+[07:10:27]   Loaded.
+[07:10:27]  Loading plugin: crashdetect
+[07:10:27]   Failed.
+[07:10:27]  Loaded 3 plugins.
+
+[07:10:27] 
+[07:10:27] Filterscripts
+[07:10:27] ---------------
+[07:10:27]   Loaded 0 filterscripts.
+
+[07:10:27] Script[gamemodes/rpgm.amx]: Run time error 19: "File or function is not found"
+[07:10:27] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:17:34] filterscripts = ""  (string)
+[07:17:34] 
+[07:17:34] Server Plugins
+[07:17:34] --------------
+[07:17:34]  Loading plugin: mysql
+[07:17:34]  >> plugin.mysql: R41-4 successfully loaded.
+[07:17:34]   Loaded.
+[07:17:34]  Loading plugin: streamer
+[07:17:34] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:17:34]   Loaded.
+[07:17:34]  Loading plugin: sscanf
+[07:17:34] 
+[07:17:34]  ===============================
+[07:17:34] 
+[07:17:34]       sscanf plugin loaded.     
+[07:17:34] 
+[07:17:34]          Version: 2.13.8
+[07:17:34] 
+[07:17:34]    (c) 2022 Alex "Y_Less" Cole  
+[07:17:34] 
+[07:17:34]  ===============================
+[07:17:34] 
+[07:17:34]   Loaded.
+[07:17:34]  Loading plugin: crashdetect
+[07:17:34]   Failed.
+[07:17:34]  Loading plugin: whirlpool
+[07:17:34]  
+[07:17:34]  ==================
+[07:17:34]  
+[07:17:34]   Whirlpool loaded
+[07:17:34]  
+[07:17:34]  ==================
+[07:17:34]  
+[07:17:34]   Loaded.
+[07:17:34]  Loaded 4 plugins.
+
+[07:17:34] 
+[07:17:34] Filterscripts
+[07:17:34] ---------------
+[07:17:34]   Loaded 0 filterscripts.
+
+[07:17:34] AMX (44574456) loaded
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:17:44] filterscripts = ""  (string)
+[07:17:44] 
+[07:17:44] Server Plugins
+[07:17:44] --------------
+[07:17:44]  Loading plugin: mysql
+[07:17:44]  >> plugin.mysql: R41-4 successfully loaded.
+[07:17:44]   Loaded.
+[07:17:44]  Loading plugin: streamer
+[07:17:44] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:17:44]   Loaded.
+[07:17:44]  Loading plugin: sscanf
+[07:17:44] 
+[07:17:44]  ===============================
+[07:17:44] 
+[07:17:44]       sscanf plugin loaded.     
+[07:17:44] 
+[07:17:44]          Version: 2.13.8
+[07:17:44] 
+[07:17:44]    (c) 2022 Alex "Y_Less" Cole  
+[07:17:44] 
+[07:17:44]  ===============================
+[07:17:44] 
+[07:17:44]   Loaded.
+[07:17:44]  Loading plugin: crashdetect
+[07:17:44]   Failed.
+[07:17:44]  Loading plugin: whirlpool
+[07:17:44]  
+[07:17:44]  ==================
+[07:17:44]  
+[07:17:44]   Whirlpool loaded
+[07:17:44]  
+[07:17:44]  ==================
+[07:17:44]  
+[07:17:44]   Loaded.
+[07:17:44]  Loaded 4 plugins.
+
+[07:17:44] 
+[07:17:44] Filterscripts
+[07:17:44] ---------------
+[07:17:44]   Loaded 0 filterscripts.
+
+[07:17:44] AMX (43525880) loaded
+[07:18:02] =====================================================
+[07:18:02] [DATABASE] ERROR: No se pudo conectar a MySQL.
+[07:18:02] [DATABASE] Revisa DB_HOST / DB_USER / DB_PASS / DB_NAME en database.inc
+[07:18:02] =====================================================
+[07:18:02] 
+----------------------------------
+[07:18:02]  RPGM - Servidor RolePlay Moderno 
+[07:18:02] ----------------------------------
+
+[07:18:02] Number of vehicle models: 0
+[07:19:31] [connection] 127.0.0.1:63388 requests connection cookie.
+[07:19:32] [connection] incoming connection: 127.0.0.1:63388 id: 0
+[07:19:32] [join] Rex_Sterling has joined the server (0:127.0.0.1)
+[07:20:22] [part] Rex_Sterling has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:54:26] filterscripts = ""  (string)
+[07:54:26] 
+[07:54:26] Server Plugins
+[07:54:26] --------------
+[07:54:26]  Loading plugin: mysql
+[07:54:26]  >> plugin.mysql: R41-4 successfully loaded.
+[07:54:26]   Loaded.
+[07:54:26]  Loading plugin: streamer
+[07:54:26] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:54:26]   Loaded.
+[07:54:26]  Loading plugin: sscanf
+[07:54:26] 
+[07:54:26]  ===============================
+[07:54:26] 
+[07:54:26]       sscanf plugin loaded.     
+[07:54:26] 
+[07:54:26]          Version: 2.13.8
+[07:54:26] 
+[07:54:26]    (c) 2022 Alex "Y_Less" Cole  
+[07:54:26] 
+[07:54:26]  ===============================
+[07:54:26] 
+[07:54:26]   Loaded.
+[07:54:26]  Loading plugin: crashdetect
+[07:54:26]   Failed.
+[07:54:26]  Loading plugin: whirlpool
+[07:54:26]  
+[07:54:26]  ==================
+[07:54:26]  
+[07:54:26]   Whirlpool loaded
+[07:54:26]  
+[07:54:26]  ==================
+[07:54:26]  
+[07:54:26]   Loaded.
+[07:54:26]  Loaded 4 plugins.
+
+[07:54:26] 
+[07:54:26] Filterscripts
+[07:54:26] ---------------
+[07:54:26]   Loaded 0 filterscripts.
+
+[07:54:26] AMX (43525880) loaded
+[07:54:26] =====================================================
+[07:54:26] [DATABASE] ERROR: No se pudo conectar a MySQL.
+[07:54:26] [DATABASE] Revisa DB_HOST / DB_USER / DB_PASS / DB_NAME en database.inc
+[07:54:26] =====================================================
+[07:54:26] 
+----------------------------------
+[07:54:26]  RPGM - Servidor RolePlay Moderno 
+[07:54:26] ----------------------------------
+
+[07:54:26] Number of vehicle models: 0
+[07:55:01] [connection] 127.0.0.1:61356 requests connection cookie.
+[07:55:02] [connection] incoming connection: 127.0.0.1:61356 id: 0
+[07:55:02] [join] Rex_Sterling has joined the server (0:127.0.0.1)
+[07:55:09] [part] Rex_Sterling has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[07:57:06] filterscripts = ""  (string)
+[07:57:06] 
+[07:57:06] Server Plugins
+[07:57:06] --------------
+[07:57:06]  Loading plugin: mysql
+[07:57:06]  >> plugin.mysql: R41-4 successfully loaded.
+[07:57:06]   Loaded.
+[07:57:06]  Loading plugin: streamer
+[07:57:06] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[07:57:06]   Loaded.
+[07:57:06]  Loading plugin: sscanf
+[07:57:06] 
+[07:57:06]  ===============================
+[07:57:06] 
+[07:57:06]       sscanf plugin loaded.     
+[07:57:06] 
+[07:57:06]          Version: 2.13.8
+[07:57:06] 
+[07:57:06]    (c) 2022 Alex "Y_Less" Cole  
+[07:57:06] 
+[07:57:06]  ===============================
+[07:57:06] 
+[07:57:06]   Loaded.
+[07:57:06]  Loading plugin: crashdetect
+[07:57:06]   Failed.
+[07:57:06]  Loading plugin: whirlpool
+[07:57:06]  
+[07:57:06]  ==================
+[07:57:06]  
+[07:57:06]   Whirlpool loaded
+[07:57:06]  
+[07:57:06]  ==================
+[07:57:06]  
+[07:57:06]   Loaded.
+[07:57:06]  Loaded 4 plugins.
+
+[07:57:06] 
+[07:57:06] Filterscripts
+[07:57:06] ---------------
+[07:57:06]   Loaded 0 filterscripts.
+
+[07:57:06] AMX (43591416) loaded
+[07:57:06] =====================================================
+[07:57:06] [DATABASE] ERROR: No se pudo conectar a MySQL.
+[07:57:06] [DATABASE] Revisa DB_HOST / DB_USER / DB_PASS / DB_NAME en database.inc
+[07:57:06] =====================================================
+[07:57:06] 
+----------------------------------
+[07:57:06]  RPGM - Servidor RolePlay Moderno 
+[07:57:06] ----------------------------------
+
+[07:57:06] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:16:59] filterscripts = ""  (string)
+[10:16:59] 
+[10:16:59] Server Plugins
+[10:16:59] --------------
+[10:16:59]  Loading plugin: mysql
+[10:16:59]  >> plugin.mysql: R41-4 successfully loaded.
+[10:16:59]   Loaded.
+[10:16:59]  Loading plugin: streamer
+[10:16:59] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[10:16:59]   Loaded.
+[10:16:59]  Loading plugin: sscanf
+[10:16:59] 
+[10:16:59]  ===============================
+[10:16:59] 
+[10:16:59]       sscanf plugin loaded.     
+[10:16:59] 
+[10:16:59]          Version: 2.13.8
+[10:16:59] 
+[10:16:59]    (c) 2022 Alex "Y_Less" Cole  
+[10:16:59] 
+[10:16:59]  ===============================
+[10:16:59] 
+[10:16:59]   Loaded.
+[10:16:59]  Loading plugin: crashdetect
+[10:16:59]   Failed.
+[10:16:59]  Loading plugin: whirlpool
+[10:16:59]  
+[10:16:59]  ==================
+[10:16:59]  
+[10:16:59]   Whirlpool loaded
+[10:16:59]  
+[10:16:59]  ==================
+[10:16:59]  
+[10:16:59]   Loaded.
+[10:16:59]  Loaded 4 plugins.
+
+[10:16:59] 
+[10:16:59] Filterscripts
+[10:16:59] ---------------
+[10:16:59]   Loaded 0 filterscripts.
+
+[10:16:59] AMX (43591416) loaded
+[10:16:59] =====================================================
+[10:16:59] [DATABASE] ERROR: No se pudo conectar a MySQL.
+[10:16:59] [DATABASE] Revisa DB_HOST / DB_USER / DB_PASS / DB_NAME en database.inc
+[10:16:59] =====================================================
+[10:16:59] 
+----------------------------------
+[10:16:59]  RPGM - Servidor RolePlay Moderno 
+[10:16:59] ----------------------------------
+
+[10:16:59] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:17:25] filterscripts = ""  (string)
+[10:17:25] 
+[10:17:25] Server Plugins
+[10:17:25] --------------
+[10:17:25]  Loading plugin: mysql
+[10:17:25]  >> plugin.mysql: R41-4 successfully loaded.
+[10:17:25]   Loaded.
+[10:17:25]  Loading plugin: streamer
+[10:17:25] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[10:17:25]   Loaded.
+[10:17:25]  Loading plugin: sscanf
+[10:17:25] 
+[10:17:25]  ===============================
+[10:17:25] 
+[10:17:25]       sscanf plugin loaded.     
+[10:17:25] 
+[10:17:25]          Version: 2.13.8
+[10:17:25] 
+[10:17:25]    (c) 2022 Alex "Y_Less" Cole  
+[10:17:25] 
+[10:17:25]  ===============================
+[10:17:25] 
+[10:17:25]   Loaded.
+[10:17:25]  Loading plugin: crashdetect
+[10:17:25]   Failed.
+[10:17:25]  Loading plugin: whirlpool
+[10:17:25]  
+[10:17:25]  ==================
+[10:17:25]  
+[10:17:25]   Whirlpool loaded
+[10:17:25]  
+[10:17:25]  ==================
+[10:17:25]  
+[10:17:25]   Loaded.
+[10:17:25]  Loaded 4 plugins.
+
+[10:17:25] 
+[10:17:25] Filterscripts
+[10:17:25] ---------------
+[10:17:25]   Loaded 0 filterscripts.
+
+[10:17:25] AMX (44574456) loaded
+[10:17:25] =====================================================
+[10:17:25] [DATABASE] ERROR: No se pudo conectar a MySQL.
+[10:17:25] [DATABASE] Revisa DB_HOST / DB_USER / DB_PASS / DB_NAME en database.inc
+[10:17:25] =====================================================
+[10:17:25] 
+----------------------------------
+[10:17:25]  RPGM - Servidor RolePlay Moderno 
+[10:17:25] ----------------------------------
+
+[10:17:25] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:19:37] filterscripts = ""  (string)
+[10:19:37] 
+[10:19:37] Server Plugins
+[10:19:37] --------------
+[10:19:37]  Loading plugin: mysql
+[10:19:37]  >> plugin.mysql: R41-4 successfully loaded.
+[10:19:37]   Loaded.
+[10:19:37]  Loading plugin: streamer
+[10:19:37] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[10:19:37]   Loaded.
+[10:19:37]  Loading plugin: sscanf
+[10:19:37] 
+[10:19:37]  ===============================
+[10:19:37] 
+[10:19:37]       sscanf plugin loaded.     
+[10:19:37] 
+[10:19:37]          Version: 2.13.8
+[10:19:37] 
+[10:19:37]    (c) 2022 Alex "Y_Less" Cole  
+[10:19:37] 
+[10:19:37]  ===============================
+[10:19:37] 
+[10:19:37]   Loaded.
+[10:19:37]  Loading plugin: crashdetect
+[10:19:37]   Failed.
+[10:19:37]  Loading plugin: whirlpool
+[10:19:37]  
+[10:19:37]  ==================
+[10:19:37]  
+[10:19:37]   Whirlpool loaded
+[10:19:37]  
+[10:19:37]  ==================
+[10:19:37]  
+[10:19:37]   Loaded.
+[10:19:37]  Loaded 4 plugins.
+
+[10:19:37] 
+[10:19:37] Filterscripts
+[10:19:37] ---------------
+[10:19:37]   Loaded 0 filterscripts.
+
+[10:19:37] AMX (43525880) loaded
+[10:19:37] =====================================================
+[10:19:37] [DATABASE] ERROR: No se pudo conectar a MySQL.
+[10:19:37] [DATABASE] Revisa DB_HOST / DB_USER / DB_PASS / DB_NAME en database.inc
+[10:19:37] =====================================================
+[10:19:37] 
+----------------------------------
+[10:19:37]  RPGM - Servidor RolePlay Moderno 
+[10:19:37] ----------------------------------
+
+[10:19:37] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:20:39] filterscripts = ""  (string)
+[10:20:39] 
+[10:20:39] Server Plugins
+[10:20:39] --------------
+[10:20:39]  Loading plugin: mysql
+[10:20:39]  >> plugin.mysql: R41-4 successfully loaded.
+[10:20:39]   Loaded.
+[10:20:39]  Loading plugin: streamer
+[10:20:39] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[10:20:39]   Loaded.
+[10:20:39]  Loading plugin: sscanf
+[10:20:39] 
+[10:20:39]  ===============================
+[10:20:39] 
+[10:20:39]       sscanf plugin loaded.     
+[10:20:39] 
+[10:20:39]          Version: 2.13.8
+[10:20:39] 
+[10:20:39]    (c) 2022 Alex "Y_Less" Cole  
+[10:20:39] 
+[10:20:39]  ===============================
+[10:20:39] 
+[10:20:39]   Loaded.
+[10:20:39]  Loading plugin: crashdetect
+[10:20:39]   Failed.
+[10:20:39]  Loading plugin: whirlpool
+[10:20:39]  
+[10:20:39]  ==================
+[10:20:39]  
+[10:20:39]   Whirlpool loaded
+[10:20:39]  
+[10:20:39]  ==================
+[10:20:39]  
+[10:20:39]   Loaded.
+[10:20:39]  Loaded 4 plugins.
+
+[10:20:39] 
+[10:20:39] Filterscripts
+[10:20:39] ---------------
+[10:20:39]   Loaded 0 filterscripts.
+
+[10:20:39] AMX (44377848) loaded
+[10:20:39] =====================================================
+[10:20:39] [DATABASE] Conexión a MySQL establecida correctamente.
+[10:20:39] =====================================================
+[10:20:39] 
+----------------------------------
+[10:20:39]  RPGM - Servidor RolePlay Moderno 
+[10:20:39] ----------------------------------
+
+[10:20:39] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[10:21:09] filterscripts = ""  (string)
+[10:21:09] 
+[10:21:09] Server Plugins
+[10:21:09] --------------
+[10:21:09]  Loading plugin: mysql
+[10:21:09]  >> plugin.mysql: R41-4 successfully loaded.
+[10:21:09]   Loaded.
+[10:21:09]  Loading plugin: streamer
+[10:21:09] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[10:21:09]   Loaded.
+[10:21:09]  Loading plugin: sscanf
+[10:21:09] 
+[10:21:09]  ===============================
+[10:21:09] 
+[10:21:09]       sscanf plugin loaded.     
+[10:21:09] 
+[10:21:09]          Version: 2.13.8
+[10:21:09] 
+[10:21:09]    (c) 2022 Alex "Y_Less" Cole  
+[10:21:09] 
+[10:21:09]  ===============================
+[10:21:09] 
+[10:21:09]   Loaded.
+[10:21:09]  Loading plugin: crashdetect
+[10:21:09]   Failed.
+[10:21:09]  Loading plugin: whirlpool
+[10:21:09]  
+[10:21:09]  ==================
+[10:21:09]  
+[10:21:09]   Whirlpool loaded
+[10:21:09]  
+[10:21:09]  ==================
+[10:21:09]  
+[10:21:09]   Loaded.
+[10:21:09]  Loaded 4 plugins.
+
+[10:21:09] 
+[10:21:09] Filterscripts
+[10:21:09] ---------------
+[10:21:09]   Loaded 0 filterscripts.
+
+[10:21:09] AMX (43591416) loaded
+[10:21:09] =====================================================
+[10:21:09] [DATABASE] Conexión a MySQL establecida correctamente.
+[10:21:09] =====================================================
+[10:21:09] 
+----------------------------------
+[10:21:09]  RPGM - Servidor RolePlay Moderno 
+[10:21:09] ----------------------------------
+
+[10:21:09] Number of vehicle models: 0
+[10:21:34] [connection] 127.0.0.1:52654 requests connection cookie.
+[10:21:35] [connection] incoming connection: 127.0.0.1:52654 id: 0
+[10:21:35] [join] Rex_Sterling has joined the server (0:127.0.0.1)
+[10:23:59] [part] Rex_Sterling has left the server (0:1)
