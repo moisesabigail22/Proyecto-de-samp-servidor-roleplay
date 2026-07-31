@@ -17,6 +17,12 @@
 
 #define MAX_LOGIN_ATTEMPTS 3
 
+#define DEFAULT_SPAWN_X 1958.3783
+#define DEFAULT_SPAWN_Y 1343.1572
+#define DEFAULT_SPAWN_Z 15.3746
+#define DEFAULT_SPAWN_A 269.1425
+#define DEFAULT_SKIN    0
+
 enum E_PLAYER_DATA
 {
     pID,
@@ -63,20 +69,23 @@ public OnAccountCheck(playerid)
     if (rows > 0)
     {
         // Cuenta existe -> pedir contraseña (login)
-        new title[64];
-        format(title, sizeof(title), "Iniciar sesion - Bienvenido %s", name);
-        ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, title,
-            "Esta cuenta ya esta registrada.\nIngresa tu contraseña para continuar:",
+        new title[64], body[512];
+        format(title, sizeof(title), "RPGM RolePlay | Acceso de %s", name);
+        format(body, sizeof(body),
+            "{33CCFF}Bienvenido de nuevo, {FFFFFF}%s{33CCFF}.\n\n{FFFFFF}Tu personaje ya existe en nuestra base de datos.\n{C0C0C0}Para continuar, escribe tu contraseña.\n\n{33CC33}Sistema conectado correctamente.\n{FFCC00}Intentos disponibles: %d",
+            name, MAX_LOGIN_ATTEMPTS);
+        ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, title, body,
             "Ingresar", "Salir");
     }
     else
     {
         // No existe -> registrar
-        new title[64];
-        format(title, sizeof(title), "Registro - Crea tu cuenta %s", name);
-        ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, title,
-            "Esta cuenta no esta registrada.\nElige una contraseña para crearla:",
-            "Registrarse", "Salir");
+        new title[64], body[512];
+        format(title, sizeof(title), "RPGM RolePlay | Registro de %s", name);
+        format(body, sizeof(body),
+            "{33CCFF}Bienvenido a {FFFFFF}RPGM RolePlay{33CCFF}.\n\n{FFFFFF}No encontramos una cuenta con tu nombre.\n{C0C0C0}Crea una contraseña para guardar tu personaje, dinero y progreso.\n\n{FFCC00}Minimo: 5 caracteres.\n{33CC33}Despues del registro apareceras en el spawn inicial.");
+        ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, title, body,
+            "Crear cuenta", "Salir");
     }
     return 1;
 }
@@ -94,9 +103,9 @@ stock AccountsOnDialogResponse(playerid, dialogid, response, listitem, inputtext
         if (strlen(inputtext) < 5)
         {
             ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD,
-                "Registro - Error",
-                "La contraseña debe tener al menos 5 caracteres.\nIntenta de nuevo:",
-                "Registrarse", "Salir");
+                "RPGM RolePlay | Registro",
+                "{FF0000}La contraseña es demasiado corta.\n\n{FFFFFF}Usa al menos 5 caracteres para proteger tu cuenta.",
+                "Intentar", "Salir");
             return 1;
         }
 
@@ -140,11 +149,11 @@ forward OnAccountRegistered(playerid);
 public OnAccountRegistered(playerid)
 {
     if (!IsPlayerConnected(playerid)) return 1;
-    SendClientMessage(playerid, 0x33CC33FF, "Tu cuenta fue creada con exito. Ya has iniciado sesion.");
+    SendClientMessage(playerid, 0x33CC33FF, "Tu cuenta fue creada con exito. Preparando tu personaje...");
+    PlayerData[playerid][pID] = cache_insert_id();
     PlayerData[playerid][pLoggedIn] = true;
     LoadPlayerStats(playerid);
-    TogglePlayerSpectating(playerid, false);
-    SpawnPlayer(playerid);
+    SpawnAuthenticatedPlayer(playerid, DEFAULT_SPAWN_X, DEFAULT_SPAWN_Y, DEFAULT_SPAWN_Z, DEFAULT_SPAWN_A, DEFAULT_SKIN, 0, 0);
     ShowServerPresentation(playerid);
     return 1;
 }
@@ -188,15 +197,10 @@ public OnAccountLogin(playerid)
         cache_get_value_name_int(0, "skin", skin);
         #pragma unused posx, posy, posz, facing
 
-        SetPlayerPos(playerid, fx, fy, fz);
-        SetPlayerInterior(playerid, interior);
-        SetPlayerVirtualWorld(playerid, world);
-        SetPlayerSkin(playerid, skin);
+        SpawnAuthenticatedPlayer(playerid, fx, fy, fz, DEFAULT_SPAWN_A, skin, interior, world);
         GivePlayerMoney(playerid, PlayerData[playerid][pMoney]);
 
-        SendClientMessage(playerid, 0x33CC33FF, "Has iniciado sesion correctamente. ¡Bienvenido de nuevo!");
-        SetCameraBehindPlayer(playerid);
-        TogglePlayerSpectating(playerid, false);
+        SendClientMessage(playerid, 0x33CC33FF, "Has iniciado sesion correctamente. Cargando tu personaje...");
         ShowServerPresentation(playerid);
     }
     else
@@ -208,9 +212,9 @@ public OnAccountLogin(playerid)
             return 1;
         }
 
-        new title[64], msg[128];
+        new title[64], msg[256];
         format(title, sizeof(title), "Iniciar sesion - Intento %d/%d", PlayerData[playerid][pLoginAttempts], MAX_LOGIN_ATTEMPTS);
-        format(msg, sizeof(msg), "Contraseña incorrecta.\nIntenta de nuevo:");
+        format(msg, sizeof(msg), "{FF0000}Contraseña incorrecta.\n\n{FFFFFF}Revisa tus datos e intenta de nuevo.\n{FFCC00}Intentos restantes: %d", MAX_LOGIN_ATTEMPTS - PlayerData[playerid][pLoginAttempts]);
         ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, title, msg, "Ingresar", "Salir");
     }
     return 1;
@@ -221,9 +225,28 @@ public OnAccountLogin(playerid)
 // -------------------------------------------------------------
 stock LoadPlayerStats(playerid)
 {
-    SetPlayerPos(playerid, 1958.3783, 1343.1572, 15.3746);
-    SetPlayerSkin(playerid, 0);
-    GivePlayerMoney(playerid, 500);
+    PlayerData[playerid][pMoney] = 500;
+    PlayerData[playerid][pBank] = 0;
+    PlayerData[playerid][pLevel] = 1;
+    PlayerData[playerid][pExp] = 0;
+    PlayerData[playerid][pJob] = 0;
+    PlayerData[playerid][pFaction] = 0;
+    PlayerData[playerid][pGang] = 0;
+    return 1;
+}
+
+stock SpawnAuthenticatedPlayer(playerid, Float:x, Float:y, Float:z, Float:angle, skin, interior, world)
+{
+    ResetPlayerMoney(playerid);
+    SetPlayerInterior(playerid, interior);
+    SetPlayerVirtualWorld(playerid, world);
+    SetSpawnInfo(playerid, NO_TEAM, skin, x, y, z, angle, 0, 0, 0, 0, 0, 0);
+    TogglePlayerSpectating(playerid, false);
+    SpawnPlayer(playerid);
+    SetPlayerPos(playerid, x, y, z);
+    SetPlayerFacingAngle(playerid, angle);
+    SetPlayerSkin(playerid, skin);
+    SetCameraBehindPlayer(playerid);
     return 1;
 }
 
