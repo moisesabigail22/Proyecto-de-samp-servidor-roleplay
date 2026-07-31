@@ -17,6 +17,7 @@
 #define DIALOG_REG_AGE   102
 #define DIALOG_REG_SEX   103
 #define DIALOG_REG_SPAWN 104
+#define DIALOG_REG_SKIN  105
 
 #define MAX_LOGIN_ATTEMPTS 3
 
@@ -45,7 +46,8 @@ enum E_PLAYER_DATA
     pLoginAttempts,
     pAge,
     pSex,
-    pSpawnCity
+    pSpawnCity,
+    pSkin
 };
 new PlayerData[MAX_PLAYERS][E_PLAYER_DATA];
 new RegisterPassword[MAX_PLAYERS][129];
@@ -156,6 +158,25 @@ stock AccountsOnDialogResponse(playerid, dialogid, response, listitem, inputtext
         if (!response) return Kick(playerid), 1;
 
         PlayerData[playerid][pSex] = listitem;
+        ShowPlayerDialog(playerid, DIALOG_REG_SKIN, DIALOG_STYLE_LIST,
+            "RPGM RolePlay | Ropa inicial",
+            "Ropa urbana\nRopa casual\nRopa elegante\nRopa de barrio",
+            "Siguiente", "Salir");
+        return 1;
+    }
+
+    if (dialogid == DIALOG_REG_SKIN)
+    {
+        if (!response) return Kick(playerid), 1;
+
+        switch (listitem)
+        {
+            case 1: PlayerData[playerid][pSkin] = 26;
+            case 2: PlayerData[playerid][pSkin] = 60;
+            case 3: PlayerData[playerid][pSkin] = 21;
+            default: PlayerData[playerid][pSkin] = DEFAULT_SKIN;
+        }
+
         ShowPlayerDialog(playerid, DIALOG_REG_SPAWN, DIALOG_STYLE_LIST,
             "RPGM RolePlay | Lugar de aparicion",
             "Los Santos\nLas Venturas\nSan Fierro",
@@ -176,8 +197,8 @@ stock AccountsOnDialogResponse(playerid, dialogid, response, listitem, inputtext
         GetSpawnByCity(PlayerData[playerid][pSpawnCity], x, y, z, a);
 
         mysql_format(g_SQL, query, sizeof(query),
-            "INSERT INTO `accounts` (`username`, `password`, `age`, `sex`, `spawn_city`, `pos_x`, `pos_y`, `pos_z`) VALUES ('%e', '%e', %d, %d, %d, %f, %f, %f)",
-            name, RegisterPassword[playerid], PlayerData[playerid][pAge], PlayerData[playerid][pSex], PlayerData[playerid][pSpawnCity], x, y, z);
+            "INSERT INTO `accounts` (`username`, `password`, `age`, `sex`, `spawn_city`, `skin`, `pos_x`, `pos_y`, `pos_z`) VALUES ('%e', '%e', %d, %d, %d, %d, %f, %f, %f)",
+            name, RegisterPassword[playerid], PlayerData[playerid][pAge], PlayerData[playerid][pSex], PlayerData[playerid][pSpawnCity], PlayerData[playerid][pSkin], x, y, z);
         mysql_tquery(g_SQL, query, "OnAccountRegistered", "d", playerid);
         return 1;
     }
@@ -215,7 +236,7 @@ public OnAccountRegistered(playerid)
 
     new Float:x, Float:y, Float:z, Float:a;
     GetSpawnByCity(PlayerData[playerid][pSpawnCity], x, y, z, a);
-    SpawnAuthenticatedPlayer(playerid, x, y, z, a, DEFAULT_SKIN, 0, 0);
+    SpawnAuthenticatedPlayer(playerid, x, y, z, a, PlayerData[playerid][pSkin], 0, 0);
     ShowServerPresentation(playerid);
     return 1;
 }
@@ -263,6 +284,7 @@ public OnAccountLogin(playerid)
         cache_get_value_name_int(0, "interior", interior);
         cache_get_value_name_int(0, "world", world);
         cache_get_value_name_int(0, "skin", skin);
+        PlayerData[playerid][pSkin] = skin;
         #pragma unused posx, posy, posz, facing
 
         SpawnAuthenticatedPlayer(playerid, fx, fy, fz, DEFAULT_SPAWN_A, skin, interior, world);
@@ -300,6 +322,7 @@ stock LoadPlayerStats(playerid)
     PlayerData[playerid][pJob] = 0;
     PlayerData[playerid][pFaction] = 0;
     PlayerData[playerid][pGang] = 0;
+    if (PlayerData[playerid][pSkin] <= 0) PlayerData[playerid][pSkin] = DEFAULT_SKIN;
     if (PlayerData[playerid][pAge] < 16) PlayerData[playerid][pAge] = 18;
     return 1;
 }

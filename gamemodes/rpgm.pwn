@@ -71,6 +71,17 @@ public OnPlayerDisconnect(playerid, reason)
     return 1;
 }
 
+
+public OnPlayerRequestClass(playerid, classid)
+{
+    if (!PlayerData[playerid][pLoggedIn])
+    {
+        TogglePlayerSpectating(playerid, true);
+        return 0;
+    }
+    return 0;
+}
+
 public OnPlayerSpawn(playerid)
 {
     if (!PlayerData[playerid][pLoggedIn]) return 0;

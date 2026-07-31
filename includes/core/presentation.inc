@@ -28,7 +28,8 @@ stock PresentationOnPlayerConnect(playerid)
 {
     PresentationResetPlayerTextdraws(playerid);
 
-    SendClientMessage(playerid, 0x9B30FFFF, "Cargando presentacion de Gran de Auto San Andreas...");
+    SendClientMessage(playerid, 0x9B30FFFF, "Cargando presentacion de Gran The Auto San Andreas...");
+    GameTextForPlayer(playerid, "~p~GRAN THE AUTO~n~~w~SAN ANDREAS", 5000, 3);
     InterpolateCameraPos(playerid, 2040.5790, 1343.7682, 60.0000, 1958.3783, 1343.1572, 28.0000, 7000, CAMERA_MOVE);
     InterpolateCameraLookAt(playerid, 1958.3783, 1343.1572, 15.3746, 1958.3783, 1343.1572, 15.3746, 7000, CAMERA_MOVE);
     ShowSplashPresentation(playerid);
@@ -105,8 +106,8 @@ stock ShowSplashPresentation(playerid)
     PlayerTextDrawShow(playerid, gSplashTD[playerid][7]);
 
     ShowPlayerDialog(playerid, DIALOG_SPLASH, DIALOG_STYLE_MSGBOX,
-        "Gran de Auto San Andreas",
-        "{B33CFF}Bienvenido al servidor moderno.\n\n{FFFFFF}Esta pantalla aparece antes del registro/login para darle presentacion al servidor.\n{C0C0C0}Al continuar verificaremos si tu cuenta existe.",
+        "Gran The Auto San Andreas",
+        "{B33CFF}GRAN THE AUTO SAN ANDREAS\n{FFFFFF}El servidor moderno\n\n{C0C0C0}Esta ventana negra aparece antes del registro/login.\n{FFFFFF}Presiona Continuar para verificar tu cuenta.",
         "Continuar", "Salir");
     return 1;
 }
