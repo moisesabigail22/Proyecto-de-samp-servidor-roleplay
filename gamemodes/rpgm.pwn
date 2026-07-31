@@ -58,7 +58,6 @@ public OnPlayerConnect(playerid)
     // Congelamos y ponemos en modo espectador visual hasta loguear
     TogglePlayerSpectating(playerid, true);
     PresentationOnPlayerConnect(playerid);
-    AccountsOnPlayerConnect(playerid);
     return 1;
 }
 
@@ -79,6 +78,9 @@ public OnPlayerSpawn(playerid)
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
+    if (PresentationOnDialogResponse(playerid, dialogid, response))
+        return 1;
+
     if (AccountsOnDialogResponse(playerid, dialogid, response, listitem, inputtext))
         return 1;
 
