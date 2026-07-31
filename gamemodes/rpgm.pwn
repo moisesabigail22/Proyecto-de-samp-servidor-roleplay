@@ -18,8 +18,10 @@
 #include <whirlpool>
 
 #include "../includes/core/database.inc"
+#include "../includes/core/presentation.inc"
 #include "../includes/core/accounts.inc"
 #include "../includes/core/economy.inc"
+#include "../includes/core/hud.inc"
 
 #define COLOR_WHITE 0xFFFFFFFF
 #define COLOR_GREEN 0x33CC33FF
@@ -43,6 +45,7 @@ public OnGameModeInit()
     AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0,0,0,0,0,0);
 
     ConnectDatabase();
+    SetTimer("UpdateServerHud", 1000, true);
     return 1;
 }
 
@@ -56,25 +59,44 @@ public OnPlayerConnect(playerid)
 {
     // Congelamos y ponemos en modo espectador visual hasta loguear
     TogglePlayerSpectating(playerid, true);
-    AccountsOnPlayerConnect(playerid);
+    HudResetPlayer(playerid);
+    PresentationOnPlayerConnect(playerid);
     return 1;
 }
 
 public OnPlayerDisconnect(playerid, reason)
 {
+    DestroyPlayerHud(playerid);
     AccountsOnPlayerDisconnect(playerid);
     return 1;
 }
 
+
+public OnPlayerRequestClass(playerid, classid)
+{
+    if (!PlayerData[playerid][pLoggedIn])
+    {
+        TogglePlayerSpectating(playerid, true);
+        return 0;
+    }
+    return 0;
+}
+
 public OnPlayerSpawn(playerid)
 {
+    if (!PlayerData[playerid][pLoggedIn]) return 0;
+
     SetPlayerHealth(playerid, 100.0);
     SetPlayerArmour(playerid, 0.0);
+    ShowPlayerHud(playerid);
     return 1;
 }
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
+    if (PresentationOnDialogResponse(playerid, dialogid, response))
+        return 1;
+
     if (AccountsOnDialogResponse(playerid, dialogid, response, listitem, inputtext))
         return 1;
 
@@ -96,6 +118,17 @@ CMD:stats(playerid, params[])
 CMD:ayuda(playerid, params[])
 {
     SendClientMessage(playerid, COLOR_WHITE, "== Comandos disponibles ==");
-    SendClientMessage(playerid, COLOR_WHITE, "/banco /depositar /retirar /pagar /stats");
+    SendClientMessage(playerid, COLOR_WHITE, "/banco /depositar /retirar /pagar /stats /coords");
+    return 1;
+}
+
+CMD:coords(playerid, params[])
+{
+    new Float:x, Float:y, Float:z, Float:a, msg[160];
+    GetPlayerPos(playerid, x, y, z);
+    GetPlayerFacingAngle(playerid, a);
+    format(msg, sizeof(msg), "POS: %.4f, %.4f, %.4f | Angulo: %.4f | Interior: %d | Mundo: %d",
+        x, y, z, a, GetPlayerInterior(playerid), GetPlayerVirtualWorld(playerid));
+    SendClientMessage(playerid, COLOR_GREEN, msg);
     return 1;
 }

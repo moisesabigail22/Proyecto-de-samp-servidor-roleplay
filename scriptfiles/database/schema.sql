@@ -20,6 +20,9 @@ CREATE TABLE IF NOT EXISTS `accounts` (
     `job`           TINYINT(2) NOT NULL DEFAULT 0,
     `faction`       TINYINT(2) NOT NULL DEFAULT 0,
     `gang`          INT(11) NOT NULL DEFAULT 0,
+    `age`           TINYINT(3) NOT NULL DEFAULT 18,
+    `sex`           TINYINT(1) NOT NULL DEFAULT 0, -- 0 masculino, 1 femenino
+    `spawn_city`    TINYINT(1) NOT NULL DEFAULT 0, -- 0 LS, 1 LV, 2 SF
     `pos_x`         FLOAT NOT NULL DEFAULT 1958.3783,
     `pos_y`         FLOAT NOT NULL DEFAULT 1343.1572,
     `pos_z`         FLOAT NOT NULL DEFAULT 15.3746,
