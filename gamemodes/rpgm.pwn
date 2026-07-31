@@ -18,6 +18,7 @@
 #include <whirlpool>
 
 #include "../includes/core/database.inc"
+#include "../includes/core/presentation.inc"
 #include "../includes/core/accounts.inc"
 #include "../includes/core/economy.inc"
 
@@ -56,6 +57,7 @@ public OnPlayerConnect(playerid)
 {
     // Congelamos y ponemos en modo espectador visual hasta loguear
     TogglePlayerSpectating(playerid, true);
+    PresentationOnPlayerConnect(playerid);
     AccountsOnPlayerConnect(playerid);
     return 1;
 }
@@ -68,6 +70,8 @@ public OnPlayerDisconnect(playerid, reason)
 
 public OnPlayerSpawn(playerid)
 {
+    if (!PlayerData[playerid][pLoggedIn]) return 0;
+
     SetPlayerHealth(playerid, 100.0);
     SetPlayerArmour(playerid, 0.0);
     return 1;

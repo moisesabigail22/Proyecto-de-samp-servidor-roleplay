@@ -143,7 +143,9 @@ public OnAccountRegistered(playerid)
     SendClientMessage(playerid, 0x33CC33FF, "Tu cuenta fue creada con exito. Ya has iniciado sesion.");
     PlayerData[playerid][pLoggedIn] = true;
     LoadPlayerStats(playerid);
+    TogglePlayerSpectating(playerid, false);
     SpawnPlayer(playerid);
+    ShowServerPresentation(playerid);
     return 1;
 }
 
@@ -195,6 +197,7 @@ public OnAccountLogin(playerid)
         SendClientMessage(playerid, 0x33CC33FF, "Has iniciado sesion correctamente. ¡Bienvenido de nuevo!");
         SetCameraBehindPlayer(playerid);
         TogglePlayerSpectating(playerid, false);
+        ShowServerPresentation(playerid);
     }
     else
     {
