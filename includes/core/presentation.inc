@@ -15,6 +15,15 @@
 
 new PlayerText:gSplashTD[MAX_PLAYERS][8];
 
+stock ClearPlayerChat(playerid)
+{
+    for (new i = 0; i < 25; i++)
+    {
+        SendClientMessage(playerid, 0x00000000, " ");
+    }
+    return 1;
+}
+
 stock PresentationResetPlayerTextdraws(playerid)
 {
     for (new i = 0; i < sizeof(gSplashTD[]); i++)
@@ -28,7 +37,7 @@ stock PresentationOnPlayerConnect(playerid)
 {
     PresentationResetPlayerTextdraws(playerid);
 
-    SendClientMessage(playerid, 0x9B30FFFF, "Cargando presentacion de Gran The Auto San Andreas...");
+    ClearPlayerChat(playerid);
     GameTextForPlayer(playerid, "~p~GRAN THE AUTO~n~~w~SAN ANDREAS", 5000, 3);
     InterpolateCameraPos(playerid, 2040.5790, 1343.7682, 60.0000, 1958.3783, 1343.1572, 28.0000, 7000, CAMERA_MOVE);
     InterpolateCameraLookAt(playerid, 1958.3783, 1343.1572, 15.3746, 1958.3783, 1343.1572, 15.3746, 7000, CAMERA_MOVE);
@@ -38,12 +47,12 @@ stock PresentationOnPlayerConnect(playerid)
 
 stock ShowSplashPresentation(playerid)
 {
-    gSplashTD[playerid][0] = CreatePlayerTextDraw(playerid, 320.0, 60.0, "_");
-    PlayerTextDrawLetterSize(playerid, gSplashTD[playerid][0], 0.0, 27.0);
-    PlayerTextDrawTextSize(playerid, gSplashTD[playerid][0], 610.0, 0.0);
-    PlayerTextDrawAlignment(playerid, gSplashTD[playerid][0], 2);
+    gSplashTD[playerid][0] = CreatePlayerTextDraw(playerid, -5.0, -5.0, "_");
+    PlayerTextDrawLetterSize(playerid, gSplashTD[playerid][0], 0.0, 55.0);
+    PlayerTextDrawTextSize(playerid, gSplashTD[playerid][0], 650.0, 0.0);
+    PlayerTextDrawAlignment(playerid, gSplashTD[playerid][0], 1);
     PlayerTextDrawUseBox(playerid, gSplashTD[playerid][0], 1);
-    PlayerTextDrawBoxColor(playerid, gSplashTD[playerid][0], 0x000000CC);
+    PlayerTextDrawBoxColor(playerid, gSplashTD[playerid][0], 0x000000FF);
     PlayerTextDrawShow(playerid, gSplashTD[playerid][0]);
 
     gSplashTD[playerid][1] = CreatePlayerTextDraw(playerid, 320.0, 92.0, "GRAN");
@@ -131,6 +140,7 @@ stock PresentationOnDialogResponse(playerid, dialogid, response)
     if (dialogid != DIALOG_SPLASH) return 0;
 
     HideSplashPresentation(playerid);
+    ClearPlayerChat(playerid);
     if (!response) return Kick(playerid), 1;
     AccountsOnPlayerConnect(playerid);
     return 1;
