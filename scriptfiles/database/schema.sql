@@ -26,6 +26,13 @@ CREATE TABLE IF NOT EXISTS `accounts` (
     `interior`      INT(11) NOT NULL DEFAULT 0,
     `world`         INT(11) NOT NULL DEFAULT 0,
     `skin`          INT(11) NOT NULL DEFAULT 0,
+    `age`           INT(11) NOT NULL DEFAULT 18,
+    `sex`           TINYINT(1) NOT NULL DEFAULT 1,
+    `city`          TINYINT(1) NOT NULL DEFAULT 1,
+    `phone`         INT(11) NOT NULL DEFAULT 0,
+    `has_phone`     TINYINT(1) NOT NULL DEFAULT 0,
+    `has_radio`     TINYINT(1) NOT NULL DEFAULT 0,
+    `hunger`        INT(11) NOT NULL DEFAULT 100,
     `health`        FLOAT NOT NULL DEFAULT 100,
     `armour`        FLOAT NOT NULL DEFAULT 0,
     `register_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -112,5 +119,30 @@ CREATE TABLE IF NOT EXISTS `admin_logs` (
     `action`    VARCHAR(16) NOT NULL,
     `reason`    VARCHAR(128) NULL,
     `date`      DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- Amigos entre jugadores para /amigos y futuras acciones persistentes
+CREATE TABLE IF NOT EXISTS `friends` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `account_id` INT(11) NOT NULL,
+    `friend_id` INT(11) NOT NULL,
+    `status` TINYINT(1) NOT NULL DEFAULT 1,
+    `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`),
+    KEY `account_id` (`account_id`),
+    KEY `friend_id` (`friend_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Puntos base de tiendas/concesionarios mapeados en el gamemode
+CREATE TABLE IF NOT EXISTS `shop_points` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(48) NOT NULL,
+    `type` TINYINT(2) NOT NULL,
+    `city` VARCHAR(32) NOT NULL,
+    `pos_x` FLOAT NOT NULL,
+    `pos_y` FLOAT NOT NULL,
+    `pos_z` FLOAT NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
