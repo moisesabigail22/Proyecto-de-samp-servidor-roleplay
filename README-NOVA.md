@@ -13,11 +13,13 @@ o quedó corrupto al copiarlo/subirlo. El servidor SA-MP carga archivos `.amx`, 
 
 ## Windows
 
-Ejecuta:
+Ejecuta **este archivo**, no `pawno\pawncc.exe` directamente:
 
 ```bat
 compile-rpgm.bat
 ```
+
+El compilador escribira detalles en `compile-rpgm.log`. Si la ventana se queda solo en `Pawn compiler 3.2.3664`, normalmente abriste `pawno\pawncc.exe` sin pasarle `gamemodes\rpgm.pwn`; cierra esa ventana y ejecuta `compile-rpgm.bat` desde la carpeta principal.
 
 Luego inicia:
 
