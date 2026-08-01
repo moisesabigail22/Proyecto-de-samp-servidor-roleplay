@@ -19,7 +19,7 @@ Ejecuta **este archivo**, no `pawno\pawncc.exe` directamente:
 compile-rpgm.bat
 ```
 
-El compilador escribira detalles en `compile-rpgm.log`. Si la ventana se queda solo en `Pawn compiler 3.2.3664`, normalmente abriste `pawno\pawncc.exe` sin pasarle `gamemodes\rpgm.pwn`; cierra esa ventana y ejecuta `compile-rpgm.bat` desde la carpeta principal.
+El compilador escribira detalles en `compile-rpgm.log`. Si la ventana se queda pensando, esta version del `.bat` usa rutas relativas cortas para evitar el problema comun del `pawncc` viejo con rutas absolutas muy largas. Si aun falla, abre `compile-rpgm.log` y revisa la primera linea de error.
 
 Luego inicia:
 
