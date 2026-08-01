@@ -1,0 +1,5 @@
+# SA-MP compiled artifacts are binary; never apply line-ending conversion.
+*.amx binary
+*.dll binary
+*.so binary
+*.exe binary
