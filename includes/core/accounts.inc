@@ -32,6 +32,8 @@ enum E_PLAYER_DATA
     pLoginAttempts
 };
 new PlayerData[MAX_PLAYERS][E_PLAYER_DATA];
+new pAge[MAX_PLAYERS], pSex[MAX_PLAYERS], pCity[MAX_PLAYERS], pPhone[MAX_PLAYERS], pHunger[MAX_PLAYERS];
+new bool:pHasPhone[MAX_PLAYERS], bool:pHasRadio[MAX_PLAYERS];
 
 // -------------------------------------------------------------
 // Conexión de un jugador: revisamos si la cuenta existe
@@ -140,10 +142,9 @@ forward OnAccountRegistered(playerid);
 public OnAccountRegistered(playerid)
 {
     if (!IsPlayerConnected(playerid)) return 1;
-    SendClientMessage(playerid, 0x33CC33FF, "Tu cuenta fue creada con exito. Ya has iniciado sesion.");
-    PlayerData[playerid][pLoggedIn] = true;
-    LoadPlayerStats(playerid);
-    SpawnPlayer(playerid);
+    PlayerData[playerid][pID] = cache_insert_id();
+    SendClientMessage(playerid, 0x33CC33FF, "Tu cuenta fue creada con exito. Completa tu personaje.");
+    CallLocalFunction("RoleplayShowProfileDialog", "d", playerid);
     return 1;
 }
 
@@ -157,6 +158,7 @@ public OnAccountLogin(playerid)
         PlayerData[playerid][pLoggedIn] = true;
 
         new id, adminlvl, money, bank, level, exp, job, faction, gang;
+        new age, sex, city, phone, hunger, has_phone, has_radio;
         cache_get_value_name_int(0, "id", id);
         cache_get_value_name_int(0, "admin_level", adminlvl);
         cache_get_value_name_int(0, "money", money);
@@ -166,6 +168,13 @@ public OnAccountLogin(playerid)
         cache_get_value_name_int(0, "job", job);
         cache_get_value_name_int(0, "faction", faction);
         cache_get_value_name_int(0, "gang", gang);
+        cache_get_value_name_int(0, "age", age);
+        cache_get_value_name_int(0, "sex", sex);
+        cache_get_value_name_int(0, "city", city);
+        cache_get_value_name_int(0, "phone", phone);
+        cache_get_value_name_int(0, "hunger", hunger);
+        cache_get_value_name_int(0, "has_phone", has_phone);
+        cache_get_value_name_int(0, "has_radio", has_radio);
 
         PlayerData[playerid][pID] = id;
         PlayerData[playerid][pAdminLevel] = adminlvl;
@@ -176,6 +185,13 @@ public OnAccountLogin(playerid)
         PlayerData[playerid][pJob] = job;
         PlayerData[playerid][pFaction] = faction;
         PlayerData[playerid][pGang] = gang;
+        pAge[playerid] = age;
+        pSex[playerid] = sex;
+        pCity[playerid] = city;
+        pPhone[playerid] = phone;
+        pHunger[playerid] = hunger;
+        pHasPhone[playerid] = bool:has_phone;
+        pHasRadio[playerid] = bool:has_radio;
 
         new posx, posy, posz, Float:fx, Float:fy, Float:fz, Float:facing, interior, world, skin;
         cache_get_value_name_float(0, "pos_x", fx);
@@ -195,6 +211,7 @@ public OnAccountLogin(playerid)
         SendClientMessage(playerid, 0x33CC33FF, "Has iniciado sesion correctamente. ¡Bienvenido de nuevo!");
         SetCameraBehindPlayer(playerid);
         TogglePlayerSpectating(playerid, false);
+        CallLocalFunction("RoleplayShowHudPublic", "d", playerid);
     }
     else
     {
@@ -238,11 +255,13 @@ stock AccountsOnPlayerDisconnect(playerid)
     mysql_format(g_SQL, query, sizeof(query),
         "UPDATE `accounts` SET `money`=%d, `bank`=%d, `level`=%d, `exp`=%d, \
          `job`=%d, `faction`=%d, `gang`=%d, `pos_x`=%f, `pos_y`=%f, `pos_z`=%f, \
-         `interior`=%d, `world`=%d, `last_login`=NOW() WHERE `id`=%d",
+         `interior`=%d, `world`=%d, `age`=%d, `sex`=%d, `city`=%d, `phone`=%d, `hunger`=%d, `has_phone`=%d, `has_radio`=%d, `last_login`=NOW() WHERE `id`=%d",
         GetPlayerMoney(playerid), PlayerData[playerid][pBank],
         PlayerData[playerid][pLevel], PlayerData[playerid][pExp],
         PlayerData[playerid][pJob], PlayerData[playerid][pFaction],
         PlayerData[playerid][pGang], x, y, z, interior, world,
+        pAge[playerid], pSex[playerid], pCity[playerid], pPhone[playerid],
+        pHunger[playerid], pHasPhone[playerid], pHasRadio[playerid],
         PlayerData[playerid][pID]);
     mysql_tquery(g_SQL, query);
     return 1;

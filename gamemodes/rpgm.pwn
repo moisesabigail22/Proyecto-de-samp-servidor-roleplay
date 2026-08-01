@@ -20,6 +20,7 @@
 #include "../includes/core/database.inc"
 #include "../includes/core/accounts.inc"
 #include "../includes/core/economy.inc"
+#include "../includes/core/roleplay.inc"
 
 #define COLOR_WHITE 0xFFFFFFFF
 #define COLOR_GREEN 0x33CC33FF
@@ -43,11 +44,13 @@ public OnGameModeInit()
     AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0,0,0,0,0,0);
 
     ConnectDatabase();
+    RoleplayOnGameModeInit();
     return 1;
 }
 
 public OnGameModeExit()
 {
+    RoleplayOnGameModeExit();
     DisconnectDatabase();
     return 1;
 }
@@ -56,12 +59,14 @@ public OnPlayerConnect(playerid)
 {
     // Congelamos y ponemos en modo espectador visual hasta loguear
     TogglePlayerSpectating(playerid, true);
+    RoleplayOnPlayerConnect(playerid);
     AccountsOnPlayerConnect(playerid);
     return 1;
 }
 
 public OnPlayerDisconnect(playerid, reason)
 {
+    RoleplayOnPlayerDisconnect(playerid);
     AccountsOnPlayerDisconnect(playerid);
     return 1;
 }
@@ -70,6 +75,7 @@ public OnPlayerSpawn(playerid)
 {
     SetPlayerHealth(playerid, 100.0);
     SetPlayerArmour(playerid, 0.0);
+    if (PlayerData[playerid][pLoggedIn]) RoleplayShowHud(playerid);
     return 1;
 }
 
@@ -78,24 +84,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
     if (AccountsOnDialogResponse(playerid, dialogid, response, listitem, inputtext))
         return 1;
 
+    if (RoleplayOnDialogResponse(playerid, dialogid, response, listitem, inputtext))
+        return 1;
+
     return 0;
-}
-
-// -------------------------------------------------------------
-// Comandos basicos de ejemplo (mas se agregan en fases siguientes)
-// -------------------------------------------------------------
-CMD:stats(playerid, params[])
-{
-    new msg[160];
-    format(msg, sizeof(msg), "Nivel: %d | EXP: %d | Admin: %d",
-        PlayerData[playerid][pLevel], PlayerData[playerid][pExp], PlayerData[playerid][pAdminLevel]);
-    SendClientMessage(playerid, COLOR_WHITE, msg);
-    return 1;
-}
-
-CMD:ayuda(playerid, params[])
-{
-    SendClientMessage(playerid, COLOR_WHITE, "== Comandos disponibles ==");
-    SendClientMessage(playerid, COLOR_WHITE, "/banco /depositar /retirar /pagar /stats");
-    return 1;
 }

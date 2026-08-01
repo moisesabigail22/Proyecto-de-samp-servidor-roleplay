@@ -1,0 +1,4 @@
+*.amx binary
+*.dll binary
+*.so binary
+*.exe binary
